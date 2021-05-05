@@ -1,7 +1,7 @@
 # IBM-SPM-BIRT-Customizations
-IBM Social Program Management (SPM) BIRT Customizations of some artifacts of BIRT v4.8-201806261756
+IBM Social Program Management (SPM) BIRT Customizations of  specified artifacts contained in BIRT v4.8-201806261756
 
-The following files contained with the BIRT deliverable have been modified:
+The following files contained within the BIRT deliverable have been modified:
 
 https://download.eclipse.org/birt/downloads/drops/R-R1-4.8.0-201806261756/birt-source-4.8.0-20180626.zip :
 
