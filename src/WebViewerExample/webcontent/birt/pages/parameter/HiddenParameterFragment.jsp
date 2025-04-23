@@ -1,9 +1,9 @@
 <%-----------------------------------------------------------------------------
 	Copyright (c) 2004 Actuate Corporation and others.
 	All rights reserved. This program and the accompanying materials 
-	are made available under the terms of the Eclipse Public License v1.0
+	are made available under the terms of the Eclipse Public License v2.0
 	which accompanies this distribution, and is available at
-	http://www.eclipse.org/legal/epl-v10.html
+	http://www.eclipse.org/legal/epl-2.0.html
 	
 	Contributors:
 		Actuate Corporation - Initial implementation.
@@ -25,9 +25,9 @@
 <%
 	ScalarParameterBean parameterBean = ( ScalarParameterBean ) attributeBean.getParameterBean( );
 	String encodedParameterName = ParameterAccessor.htmlEncode( parameterBean.getName( ) );
-	<%-- BEGIN IBM-SPM-BIRT-CODE-CHANGE - added ParameterAccessor.htmlEncode--%>
+	<%-- BEGIN CURAM-BIRT-CODE-CHANGE - added ParameterAccessor.htmlEncode--%>
 	String value = ParameterAccessor.htmlEncode( parameterBean.getValue( ));
-	<%-- END IBM-SPM-BIRT-CODE-CHANGE --%>
+	<%-- END CURAM-BIRT-CODE-CHANGE --%>
 	if( value != null )
 	{
 %>
@@ -38,9 +38,9 @@
 		<INPUT TYPE="HIDDEN" ID="control_type" VALUE="hidden">
 		<INPUT TYPE="HIDDEN"
 			NAME="<%= encodedParameterName %>"
-			<%-- BEGIN IBM-SPM-BIRT-CODE-CHANGE - Removed ParameterAccessor.htmlEncode--%>
+          <%-- BEGIN CURAM-BIRT-CODE-CHANGE - Removed ParameterAccessor.htmlEncode--%>
 			VALUE="<%= value %>"/>
-			<%-- END IBM-SPM-BIRT-CODE-CHANGE --%>
+			<%-- END CURAM-BIRT-CODE-CHANGE --%>
 		<INPUT TYPE="HIDDEN"
 			ID="<%= encodedParameterName + "_displayText" %>"
 			VALUE="<%= ParameterAccessor.htmlEncode( ( parameterBean.getDisplayText( ) == null )? "" : parameterBean.getDisplayText( ) ) %>" />				

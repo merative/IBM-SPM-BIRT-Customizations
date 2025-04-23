@@ -1,9 +1,9 @@
 <%-----------------------------------------------------------------------------
 	Copyright (c) 2004 Actuate Corporation and others.
 	All rights reserved. This program and the accompanying materials 
-	are made available under the terms of the Eclipse Public License v1.0
+	are made available under the terms of the Eclipse Public License v2.0
 	which accompanies this distribution, and is available at
-	http://www.eclipse.org/legal/epl-v10.html
+	http://www.eclipse.org/legal/epl-2.0.html
 	
 	Contributors:
 		Actuate Corporation - Initial implementation.
@@ -65,9 +65,11 @@
 			String copies = "" + bean.getCopies( );
 			String mode = "" + bean.getMode( );
 			String duplex = "" + bean.getDuplex( );
-			<%-- BEGIN IBM-SPM-BIRT-CODE-CHANGE - ParameterAccessor.htmlEncode --%> 
+			<%--BEGIN CURAM-BIRT-CODE-CHANGE - ParameterAccessor.htmlEncode --%> 
 			String mediaSize = ParameterAccessor.htmlEncode( DataUtil.trimString( bean.getMediaSize( ) ));
-			<%-- END IBM-SPM-BIRT-CODE-CHANGE --%>
+			<%--String mediaSize = DataUtil.trimString( bean.getMediaSize( ) );--%>
+			<%-- END CURAM-BIRT-CODE-CHANGE --%>
+		
 			Map map = bean.getMediaSizeNames( );
 			Object[] mediaSizeNames = map.keySet( ).toArray( );
 %>
