@@ -1,4 +1,4 @@
-# Curam-BIRT-Customizations
+# Cúram-BIRT-Customizations
 Cúram BIRT Customizations of specified artifacts contained in BIRT v4.15.0-202403270652
 
 The following files contained within the BIRT deliverable have been modified:
