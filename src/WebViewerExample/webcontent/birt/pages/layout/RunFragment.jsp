@@ -1,9 +1,9 @@
 <%-----------------------------------------------------------------------------
 	Copyright (c) 2004-2008 Actuate Corporation and others.
 	All rights reserved. This program and the accompanying materials 
-	are made available under the terms of the Eclipse Public License v1.0
+	are made available under the terms of the Eclipse Public License v2.0
 	which accompanies this distribution, and is available at
-	http://www.eclipse.org/legal/epl-v10.html
+	http://www.eclipse.org/legal/epl-2.0.html
 	
 	Contributors:
 		Actuate Corporation - Initial implementation.
@@ -38,7 +38,7 @@
 	Viewer run fragment
 -----------------------------------------------------------------------------%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
-<HTML lang="<%=  ParameterAccessor.htmlEncode( attributeBean.getLanguage() ) %>">
+<HTML lang="<%= ParameterAccessor.htmlEncode( attributeBean.getLanguage() ) %>">
 	<HEAD>
 		<TITLE><%= ParameterAccessor.htmlEncode( attributeBean.getReportTitle( ) ) %></TITLE>
 		<BASE href="<%= baseHref %>" >
@@ -121,6 +121,7 @@
 		<script src="birt/ajax/core/BirtCommunicationManager.js" type="text/javascript"></script>
 		<script src="birt/ajax/core/BirtSoapRequest.js" type="text/javascript"></script>
 		<script src="birt/ajax/core/BirtSoapResponse.js" type="text/javascript"></script>
+		
 	</HEAD>
 	
 	<BODY CLASS="BirtViewer_Body"  ONLOAD="javascript:init( );" SCROLL="no" LEFTMARGIN='0px' 
@@ -193,7 +194,9 @@
 		}
 		%>
 		}
-		<!-- BEGIN IBM-SPM-BIRT-CODE-CHANGE - commented out catchBookmark -->
+		
+		// When link to internal bookmark, use javascript to fire an Ajax request
+        <!-- BEGIN CURAM-BIRT-CODE-CHANGE - commented out catchBookmark -->
 		<%--
 		
 		// When link to internal bookmark, use javascript to fire an Ajax request
@@ -210,7 +213,8 @@
 		}
 		
 		--%>
-		<%-- END IBM-SPM-BIRT-CODE-CHANGE --%>
+		<%-- END CURAM-BIRT-CODE-CHANGE --%>
+		
 	</script>
 </HTML>
 
