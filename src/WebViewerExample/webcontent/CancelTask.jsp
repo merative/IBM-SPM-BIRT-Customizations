@@ -17,9 +17,9 @@
 <%-----------------------------------------------------------------------------
 	Cancel Task
 -----------------------------------------------------------------------------%>
-<%-- BEGIN IBM-SPM-BIRT-CODE-CHANGE --%>
+<%-- BEGIN CURAM-BIRT-CODE-CHANGE --%>
 <%--<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">--%>
-<%-- END IBM-SPM-BIRT-CODE-CHANGE --%>
+<%-- END CURAM-BIRT-CODE-CHANGE --%>
 <HTML>
 	<HEAD>
 		<TITLE>
