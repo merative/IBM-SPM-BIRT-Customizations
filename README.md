@@ -13,10 +13,16 @@ https://download.eclipse.org/birt/downloads/drops/R-R1-4.8.0-201806261756/birt-s
 
 https://download.eclipse.org/birt/downloads/drops/R-R1-4.8.0-201806261756/birt-runtime-4.8.0-20180626.zip :
 
+- WebViewerExample/webcontent/birt/pages/common/Error.jsp
+- WebViewerExample/webcontent/birt/pages/common/processing.jsp
 - WebViewerExample/webcontent/birt/pages/layout/RunFragment.jsp
+- WebViewerExample/webcontent/birt/pages/layout/FramesetFragment.jsp
+- WebViewerExample/webcontent/birt/pages/layout/RequesterFragment.jsp
 - WebViewerExample/webcontent/birt/pages/parameter/HiddenParameterFragment.jsp
 - WebViewerExample/webcontent/birt/pages/dialog/PrintReportServerDialogFragment.jsp
 - WebViewerExample/webcontent/birt/ajax/utility/Debug.js
 - WebViewerExample/webcontent/birt/styles/style.css
+- WebViewerExample/webcontent/CancelTask.jsp
+  
 
 The changes are marked by the following marker IBM-SPM-BIRT-CODE-CHANGE.
