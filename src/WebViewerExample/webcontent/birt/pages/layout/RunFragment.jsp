@@ -37,7 +37,9 @@
 <%-----------------------------------------------------------------------------
 	Viewer run fragment
 -----------------------------------------------------------------------------%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<%-- BEGIN IBM-SPM-BIRT-CODE-CHANGE --%>
+<%--<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">--%>
+<%-- END IBM-SPM-BIRT-CODE-CHANGE --%>
 <HTML lang="<%=  ParameterAccessor.htmlEncode( attributeBean.getLanguage() ) %>">
 	<HEAD>
 		<TITLE><%= ParameterAccessor.htmlEncode( attributeBean.getReportTitle( ) ) %></TITLE>
