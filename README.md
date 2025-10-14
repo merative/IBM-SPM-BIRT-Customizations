@@ -12,7 +12,11 @@ plugins.org.eclipse.birt.report.viewer.source_4.15.0-202403270652.jar/org/eclips
 plugins.org.eclipse.birt.report.engine.emitter.html.source_4.15.0-202403270652.jar/org/eclipse/birt/report/engine/emitter/html/HTMLReportEmitter.java
 https://www.eclipse.org/downloads/download.php?file=/birt/updates/release/4.15.0/downloads/birt-runtime-4.15.0-202403270652.zip:
 
+WebViewerExample/webcontent/birt/pages/common/Error.jsp
+WebViewerExample/webcontent/birt/pages/common/processing.jsp
 WebViewerExample/webcontent/birt/pages/layout/RunFragment.jsp
+WebViewerExample/webcontent/birt/pages/layout/FramesetFragment.jsp
+WebViewerExample/webcontent/birt/pages/layout/RequesterFragment.jsp
 WebViewerExample/webcontent/birt/pages/parameter/HiddenParameterFragment.jsp
 WebViewerExample/webcontent/birt/pages/dialog/PrintReportServerDialogFragment.jsp
 WebViewerExample/webcontent/birt/ajax/utility/Debug.js
