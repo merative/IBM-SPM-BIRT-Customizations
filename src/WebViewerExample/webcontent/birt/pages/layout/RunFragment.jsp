@@ -32,7 +32,7 @@
 			baseHref = baseURL;
 	}
 	baseHref += request.getContextPath( ) + fragment.getJSPRootPath( );
-	    	<%-- BEGIN CURAM-BIRT-CODE-CHANGE --%>
+	<%-- BEGIN CURAM-BIRT-CODE-CHANGE --%>
 	    String safeBaseHref = "";
     try {
         URI uri = new URI(baseHref);
