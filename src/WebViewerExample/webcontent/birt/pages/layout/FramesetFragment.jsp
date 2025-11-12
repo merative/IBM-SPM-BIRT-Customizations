@@ -32,7 +32,7 @@
 			baseHref = baseURL;
 	}
 	baseHref += request.getContextPath( ) + fragment.getJSPRootPath( );
-	<%-- BEGIN IBM-SPM-BIRT-CODE-CHANGE --%>
+	<%-- BEGIN CURAM-BIRT-CODE-CHANGE --%>
 	String safeBaseHref = "";
     try {
         URI uri = new URI(baseHref);
@@ -54,7 +54,7 @@
     } catch (Exception e) {
         safeBaseHref = "";
     }
-	<%-- END IBM-SPM-BIRT-CODE-CHANGE --%>
+	<%-- END CURAM-BIRT-CODE-CHANGE --%>
 %>
 
 <%-----------------------------------------------------------------------------
@@ -66,10 +66,10 @@
 <HTML lang="<%= attributeBean.getLanguage() %>">
 	<HEAD>
 		<TITLE><%= attributeBean.getReportTitle( ) %></TITLE>
-		<%-- BEGIN IBM-SPM-BIRT-CODE-CHANGE --%>
+		<%-- BEGIN CURAM-BIRT-CODE-CHANGE --%>
 		<!--BASE href="<%= baseHref %>" -->
 		<BASE href="<%= safeBaseHref %>" >
-		<%-- END IBM-SPM-BIRT-CODE-CHANGE --%>
+		<%-- END CURAM-BIRT-CODE-CHANGE --%>
 
 		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=utf-8">
 		<LINK REL="stylesheet" HREF="birt/styles/style.css" TYPE="text/css">
