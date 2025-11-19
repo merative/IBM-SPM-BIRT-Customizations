@@ -31,6 +31,29 @@
 			baseHref = baseURL;
 	}
 	baseHref += request.getContextPath( ) + fragment.getJSPRootPath( );
+	<%-- BEGIN IBM-SPM-BIRT-CODE-CHANGE --%>
+	    String safeBaseHref = "";
+    try {
+        URI uri = new URI(baseHref);
+        // Strictly validate baseHref to prevent injection attacks:
+        // Accept only http/https URLs with host and path, and reject any userinfo, query, or fragment components.
+        // This ensures no unexpected or unsafe content can be injected into the base tag.
+        if (
+            ("http".equals(uri.getScheme()) || "https".equals(uri.getScheme())) &&
+            uri.getHost() != null &&
+            uri.getPath() != null &&
+            uri.getQuery() == null &&
+            uri.getFragment() == null &&
+            uri.getUserInfo() == null
+        ) {
+            safeBaseHref = baseHref;
+        } else {
+            throw new IllegalArgumentException("baseHref contains unexpected components");
+        }
+    } catch (Exception e) {
+        safeBaseHref = "";
+    }
+	<%-- END IBM-SPM-BIRT-CODE-CHANGE --%>
 %>
 <%-- BEGIN IBM-SPM-BIRT-CODE-CHANGE --%>
 <%--<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">--%>
@@ -38,7 +61,10 @@
 <HTML lang="<%= attributeBean.getLanguage() %>">
 	<HEAD>
 		<TITLE>PARAMETER SELECTION PAGE</TITLE>
-		<BASE href="<%= baseHref %>" >
+		<%-- BEGIN IBM-SPM-BIRT-CODE-CHANGE --%>
+		<!--BASE href="<%= baseHref %>" -->
+		<BASE href="<%= safeBaseHref %>" >
+		<%-- END IBM-SPM-BIRT-CODE-CHANGE --%>
 
 		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=utf-8">
 		<LINK REL="stylesheet" HREF="birt/styles/style.css" TYPE="text/css">
