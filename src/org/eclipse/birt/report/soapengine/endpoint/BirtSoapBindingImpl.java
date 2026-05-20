@@ -63,20 +63,20 @@ public class BirtSoapBindingImpl implements BirtSoapPort
 				throw fault;
 			}
 
-			//BEGIN IBM-SPM-BIRT-CODE-CHANGE
+			//BEGIN CURAM-BIRT-CODE-CHANGE
 			// dont allow the exception to be re-thrown as it goes to the UI, write to stdio
 			try {
-			//END IBM-SPM-BIRT-CODE-CHANGE				
+			//END CURAM-BIRT-CODE-CHANGE				
 			
 				processor.process(context, op, response);
 				
-			//BEGIN IBM-SPM-BIRT-CODE-CHANGE				
+			//BEGIN CURAM-BIRT-CODE-CHANGE				
 			} catch (Exception e) {
 				System.out
 						.println("Ensuring the exception is not displayed on the users browser");
 				System.out.print(e.getLocalizedMessage());
 			}
-			//END IBM-SPM-BIRT-CODE-CHANGE
+			//END CURAM-BIRT-CODE-CHANGE
 		}
 
 		return response;

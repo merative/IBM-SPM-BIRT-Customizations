@@ -32,7 +32,7 @@
 			baseHref = baseURL;
 	}
 	baseHref += request.getContextPath( ) + fragment.getJSPRootPath( );
-	<%-- BEGIN IBM-SPM-BIRT-CODE-CHANGE --%>
+	<%-- BEGIN CURAM-BIRT-CODE-CHANGE --%>
 	    String safeBaseHref = "";
     try {
         URI uri = new URI(baseHref);
@@ -54,22 +54,22 @@
     } catch (Exception e) {
         safeBaseHref = "";
     }
-	<%-- END IBM-SPM-BIRT-CODE-CHANGE --%>
+	<%-- END CURAM-BIRT-CODE-CHANGE --%>
 %>
 
 <%-----------------------------------------------------------------------------
 	Viewer run fragment
 -----------------------------------------------------------------------------%>
-<%-- BEGIN IBM-SPM-BIRT-CODE-CHANGE --%>
+<%-- BEGIN CURAM-BIRT-CODE-CHANGE --%>
 <%--<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">--%>
-<%-- END IBM-SPM-BIRT-CODE-CHANGE --%>
+<%-- END CURAM-BIRT-CODE-CHANGE --%>
 <HTML lang="<%=  ParameterAccessor.htmlEncode( attributeBean.getLanguage() ) %>">
 	<HEAD>
 		<TITLE><%= ParameterAccessor.htmlEncode( attributeBean.getReportTitle( ) ) %></TITLE>
-		<%-- BEGIN IBM-SPM-BIRT-CODE-CHANGE --%>
+		<%-- BEGIN CURAM-BIRT-CODE-CHANGE --%>
 		<!--BASE href="<%= baseHref %>" -->
 		<BASE href="<%= safeBaseHref %>" >
-		<%-- END IBM-SPM-BIRT-CODE-CHANGE --%>
+		<%-- END CURAM-BIRT-CODE-CHANGE --%>
 		
 		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=utf-8">
 		<LINK REL="stylesheet" HREF="birt/styles/style.css" TYPE="text/css">
@@ -221,7 +221,7 @@
 		}
 		%>
 		}
-		<!-- BEGIN IBM-SPM-BIRT-CODE-CHANGE - commented out catchBookmark -->
+		<!-- BEGIN CURAM-BIRT-CODE-CHANGE - commented out catchBookmark -->
 		<%--
 		
 		// When link to internal bookmark, use javascript to fire an Ajax request
@@ -238,7 +238,7 @@
 		}
 		
 		--%>
-		<%-- END IBM-SPM-BIRT-CODE-CHANGE --%>
+		<%-- END CURAM-BIRT-CODE-CHANGE --%>
 	</script>
 </HTML>
 

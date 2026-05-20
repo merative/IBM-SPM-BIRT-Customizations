@@ -940,13 +940,13 @@ public class HTMLReportEmitter extends ContentEmitterAdapter {
 	private void appendErrorMessage(EngineResourceHandle rc, int index,
 			ElementExceptionInfo info) {
 
-		//BEGIN IBM-SPM-BIRT-CODE-CHANGE
+		//BEGIN CURAM-BIRT-CODE-CHANGE
 		boolean throwException = false;
 		
 		
 		String name = info.getName();
 		if (throwException == true) {
-		//END IBM-SPM-BIRT-CODE-CHANGE
+		//END CURAM-BIRT-CODE-CHANGE
 			writer.writeCode("			<div>");
 			writer.writeCode("				<div  id=\"error_title\" style=\"text-decoration:underline\">");
 
@@ -960,9 +960,9 @@ public class HTMLReportEmitter extends ContentEmitterAdapter {
 						new Object[] { info.getType(), info.getID() }), false);
 			}
 			writer.writeCode("</div>");//$NON-NLS-1$
-		//BEGIN IBM-SPM-BIRT-CODE-CHANGE
+		//BEGIN CURAM-BIRT-CODE-CHANGE
 		}
-		//END IBM-SPM-BIRT-CODE-CHANGE
+		//END CURAM-BIRT-CODE-CHANGE
 		
 		ArrayList errorList = info.getErrorList();
 		ArrayList countList = info.getCountList();
@@ -1012,14 +1012,14 @@ public class HTMLReportEmitter extends ContentEmitterAdapter {
 				System.out.println(messageBody);
 			}
 		}
-		//BEGIN IBM-SPM-BIRT-CODE-CHANGE
+		//BEGIN CURAM-BIRT-CODE-CHANGE
 		if (throwException == true) {
-		//END IBM-SPM-BIRT-CODE-CHANGE
+		//END CURAM-BIRT-CODE-CHANGE
 			writer.writeCode("</div>"); //$NON-NLS-1$
 			writer.writeCode("<br>"); //$NON-NLS-1$
-		//BEGIN IBM-SPM-BIRT-CODE-CHANGE
+		//BEGIN CURAM-BIRT-CODE-CHANGE
 		}
-		//END IBM-SPM-BIRT-CODE-CHANGE
+		//END CURAM-BIRT-CODE-CHANGE
 	}
 
 	private String getDetailMessage(Throwable t) {

@@ -25,9 +25,9 @@
 <%
 	ScalarParameterBean parameterBean = ( ScalarParameterBean ) attributeBean.getParameterBean( );
 	String encodedParameterName = ParameterAccessor.htmlEncode( parameterBean.getName( ) );
-	<%-- BEGIN IBM-SPM-BIRT-CODE-CHANGE - added ParameterAccessor.htmlEncode--%>
+	<%-- BEGIN CURAM-BIRT-CODE-CHANGE - added ParameterAccessor.htmlEncode--%>
 	String value = ParameterAccessor.htmlEncode( parameterBean.getValue( ));
-	<%-- END IBM-SPM-BIRT-CODE-CHANGE --%>
+	<%-- END CURAM-BIRT-CODE-CHANGE --%>
 	if( value != null )
 	{
 %>
@@ -38,9 +38,9 @@
 		<INPUT TYPE="HIDDEN" ID="control_type" VALUE="hidden">
 		<INPUT TYPE="HIDDEN"
 			NAME="<%= encodedParameterName %>"
-			<%-- BEGIN IBM-SPM-BIRT-CODE-CHANGE - Removed ParameterAccessor.htmlEncode--%>
+			<%-- BEGIN CURAM-BIRT-CODE-CHANGE - Removed ParameterAccessor.htmlEncode--%>
 			VALUE="<%= value %>"/>
-			<%-- END IBM-SPM-BIRT-CODE-CHANGE --%>
+			<%-- END CURAM-BIRT-CODE-CHANGE --%>
 		<INPUT TYPE="HIDDEN"
 			ID="<%= encodedParameterName + "_displayText" %>"
 			VALUE="<%= ParameterAccessor.htmlEncode( ( parameterBean.getDisplayText( ) == null )? "" : parameterBean.getDisplayText( ) ) %>" />				

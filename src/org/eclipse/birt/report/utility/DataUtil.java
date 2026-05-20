@@ -184,9 +184,9 @@ public class DataUtil
 		}
 		catch ( ValidationValueException e )
 		{
-			//BEGIN IBM-SPM-BIRT-CODE-CHANGE - ensure the exception is not exposing an internal stack trace data
+			//BEGIN CURAM-BIRT-CODE-CHANGE - ensure the exception is not exposing an internal stack trace data
 			ValidationValueException dummy = null;
-			//END IBM-SPM-BIRT-CODE-CHANGE
+			//END CURAM-BIRT-CODE-CHANGE
 			throw new ViewerValidationException( BirtResources.getMessage(
 					ResourceConstants.GENERAL_ERROR_PARAMETER_INVALID,
 					new String[]{paramName} )
@@ -224,9 +224,9 @@ public class DataUtil
 		}
 		catch ( ValidationValueException e )
 		{
-			//BEGIN IBM-SPM-BIRT-CODE-CHANGE - ensure the exception is not exposing an internal stack trace data
+			//BEGIN CURAM-BIRT-CODE-CHANGE - ensure the exception is not exposing an internal stack trace data
 			ValidationValueException dummy = null;
-			//END IBM-SPM-BIRT-CODE-CHANGE
+			//END CURAM-BIRT-CODE-CHANGE
 			throw new ViewerValidationException( BirtResources.getMessage(
 					ResourceConstants.GENERAL_ERROR_PARAMETER_INVALID,
 					new String[]{paramName} )
