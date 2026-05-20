@@ -103,9 +103,9 @@ function debug( text, isSoapMessage )
 			else
 			{
 
-				//BEGIN IBM-SPM-BIRT-CODE-CHANGE
+				//BEGIN CURAM-BIRT-CODE-CHANGE
 				text = "";
-				//END IBM-SPM-BIRT-CODE-CHANGE
+				//END CURAM-BIRT-CODE-CHANGE
 		    	window.top.debugWindow.document.write("\n");	
 		   	}
 		}

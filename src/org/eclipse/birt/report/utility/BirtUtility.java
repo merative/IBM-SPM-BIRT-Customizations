@@ -867,10 +867,10 @@ public class BirtUtility
 				.append( "</div>\n" ) //$NON-NLS-1$
 				.append( "</body>\n</html>" ); //$NON-NLS-1$
 
-		//BEGIN IBM-SPM-BIRT-CODE-CHANGE  - dont write the message to the response object as it goes to the UI, log instead.
+		//BEGIN CURAM-BIRT-CODE-CHANGE  - dont write the message to the response object as it goes to the UI, log instead.
 		System.out.println(message);
 		message = new StringBuffer(1);
-        //END IBM-SPM-BIRT-CODE-CHANGE
+    //END CURAM-BIRT-CODE-CHANGE
         
 		out.write( message.toString( ).getBytes( "UTF-8" ) ); //$NON-NLS-1$
 		out.flush( );

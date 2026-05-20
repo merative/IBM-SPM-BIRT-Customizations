@@ -335,18 +335,18 @@
  ******************************************************************************/
 .birtviewer_progressbar
 {
-	/* BEGIN IBM-SPM-BIRT-CODE-CHANGE */
+	/* BEGIN CURAM-BIRT-CODE-CHANGE */
 	font-family:Tahoma;
-	/* END IBM-SPM-BIRT-CODE-CHANGE */
+	/* END CURAM-BIRT-CODE-CHANGE */
 	font-size:8pt;
 	background:#FFFFFF;
-	/* BEGIN IBM-SPM-BIRT-CODE-CHANGE */
+	/* BEGIN CURAM-BIRT-CODE-CHANGE */
 	border-width:1px;
-	/* END IBM-SPM-BIRT-CODE-CHANGE */
+	/* END CURAM-BIRT-CODE-CHANGE */
 	border-style:solid; 
-	/* BEGIN IBM-SPM-BIRT-CODE-CHANGE */
+	/* BEGIN CURAM-BIRT-CODE-CHANGE */
 	border-color:# BFBFBE;
-	/* END IBM-SPM-BIRT-CODE-CHANGE */
+	/* END CURAM-BIRT-CODE-CHANGE */
 	cursor:default;
 }
 
@@ -388,7 +388,7 @@
 }
 
 /******************************************************************************
- * Birt document.  BEGIN IBM-SPM-BIRT-CODE-CHANGE 
+ * Birt document.  BEGIN CURAM-BIRT-CODE-CHANGE 
  ****************************************************************************
 .birtviewer_document_fragment
 {
@@ -401,7 +401,7 @@
 	border-right-color: #D0D0D0;
 	border-bottom-color: #D0D0D0;
 }
-* /* END IBM-SPM-BIRT-CODE-CHANGE  - commented out
+* /* END CURAM-BIRT-CODE-CHANGE  - commented out
 */
 
 /******************************************************************************
@@ -430,7 +430,7 @@
 	direction: ltr;
 	text-align: left;
 }
-/* BEGIN IBM-SPM-BIRT-CODE-CHANGE */
+/* BEGIN CURAM-BIRT-CODE-CHANGE */
 /******************************************************************************
  *	Curam BIRT Viewer changes to the WebContent\webcontent\birt\styles\styles.css file
  *****************************************************************************/
@@ -485,4 +485,4 @@
 	overflow: hidden;
 	color: black; /* Font color */ 
 }
-/* END IBM-SPM-BIRT-CODE-CHANGE */
+/* END CURAM-BIRT-CODE-CHANGE */

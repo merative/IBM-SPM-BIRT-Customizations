@@ -1105,24 +1105,24 @@ public class ReportEngineService
 	 */
 	private void throwDummyException( Exception e ) throws DummyRemoteException
 	{
-		//BEGIN IBM-SPM-BIRT-CODE-CHANGE
+		//BEGIN CURAM-BIRT-CODE-CHANGE
 		//print a stack trace as we no longer re-throw to html pages
 		e.printStackTrace();		
 		boolean throwException = false;
-		//END IBM-SPM-BIRT-CODE-CHANGE
+		//END CURAM-BIRT-CODE-CHANGE
 		
-		//BEGIN IBM-SPM-BIRT-CODE-CHANGE
+		//BEGIN CURAM-BIRT-CODE-CHANGE
 		if (throwException == true) {
-	    //END IBM-SPM-BIRT-CODE-CHANGE
+	    //END CURAM-BIRT-CODE-CHANGE
 			if (e instanceof ReportServiceException) {
 				throw new DummyRemoteException(e);
 			} else {
 				throw new DummyRemoteException(new ReportServiceException(
 						e.getLocalizedMessage(), e));
 			}
-		//BEGIN IBM-SPM-BIRT-CODE-CHANGE			
+		//BEGIN CURAM-BIRT-CODE-CHANGE			
 		}
-		//END IBM-SPM-BIRT-CODE-CHANGE
+		//END CURAM-BIRT-CODE-CHANGE
 	}
 
 	/**

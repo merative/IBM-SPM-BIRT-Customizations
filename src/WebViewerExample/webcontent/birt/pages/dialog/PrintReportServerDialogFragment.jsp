@@ -65,9 +65,9 @@
 			String copies = "" + bean.getCopies( );
 			String mode = "" + bean.getMode( );
 			String duplex = "" + bean.getDuplex( );
-			<%-- BEGIN IBM-SPM-BIRT-CODE-CHANGE - ParameterAccessor.htmlEncode --%> 
+			<%-- BEGIN CURAM-BIRT-CODE-CHANGE - ParameterAccessor.htmlEncode --%> 
 			String mediaSize = ParameterAccessor.htmlEncode( DataUtil.trimString( bean.getMediaSize( ) ));
-			<%-- END IBM-SPM-BIRT-CODE-CHANGE --%>
+			<%-- END CURAM-BIRT-CODE-CHANGE --%>
 			Map map = bean.getMediaSizeNames( );
 			Object[] mediaSizeNames = map.keySet( ).toArray( );
 %>

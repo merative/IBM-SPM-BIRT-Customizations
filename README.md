@@ -1,4 +1,4 @@
-# IBM-SPM-BIRT-Customizations
+# CURAM-BIRT-Customizations
 IBM Social Program Management (SPM) BIRT Customizations of  specified artifacts contained in BIRT v4.8-201806261756
 
 The following files contained within the BIRT deliverable have been modified:
@@ -25,4 +25,4 @@ https://download.eclipse.org/birt/downloads/drops/R-R1-4.8.0-201806261756/birt-r
 - WebViewerExample/webcontent/CancelTask.jsp
   
 
-The changes are marked by the following marker IBM-SPM-BIRT-CODE-CHANGE.
+The changes are marked by the following marker CURAM-BIRT-CODE-CHANGE.
