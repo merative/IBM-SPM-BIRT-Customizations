@@ -1,15 +1,35 @@
 # CURAM-BIRT-Customizations
-IBM Social Program Management (SPM) BIRT Customizations of  specified artifacts contained in BIRT v4.8-201806261756
+CURAM BIRT Customizations of  specified artifacts contained in BIRT v4.8-201806261756
 
 The following files contained within the BIRT deliverable have been modified:
 
 https://download.eclipse.org/birt/downloads/drops/R-R1-4.8.0-201806261756/birt-source-4.8.0-20180626.zip :
 
- - plugins.org.eclipse.birt.report.viewer.source_4.8.0.v201806261756.jar/org/eclipse/birt/report/soapengine/endpoint/BirtSoapBindingImpl.java
- - plugins.org.eclipse.birt.report.viewer.source_4.8.0.v201806261756.jar/org/eclipse/birt/report/utility/BirtUtility.java
- - plugins.org.eclipse.birt.report.viewer.source_4.8.0.v201806261756.jar/org/eclipse/birt/report/utility/DataUtil.java
- - plugins.org.eclipse.birt.report.viewer.source_4.8.0.v201806261756.jar/org/eclipse/birt/report/service/ReportEngineService.java
- - plugins.org.eclipse.birt.report.engine.emitter.html.source_4.8.0.v201806261756.jar/org/eclipse/birt/report/engine/emitter/html/HTMLReportEmitter.java
+ - plugins/org.eclipse.datatools.connectivity_1.14.1.201712071719/org/eclipse/datatools/connectivity/drivers/XMLFileManager.java
+ - plugins/org.eclipse.datatools.connectivity_1.14.1.201712071719/org/eclipse/datatools/connectivity/internal/ConnectionProfileMgmt.java
+ - plugins/org.eclipse.datatools.enablement.ibm.db2.luw_1.2.1.201712071719/org/eclipse/datatools/enablement/ibm/db2/luw/catalog/util/ParseXMLFile.java
+ - plugins/org.eclipse.birt.data.oda.pojo_4.8.0.v201806261756/org/eclipse/birt/data/oda/pojo/util/PojoQueryWriter.java
+ - plugins/org.eclipse.birt.data.oda.pojo_4.8.0.v201806261756/org/eclipse/birt/data/oda/pojo/util/PojoQueryParser.java
+ - plugins/org.eclipse.datatools.enablement.oda.ws_1.4.1.201712071719/org/eclipse/datatools/enablement/oda/ws/util/SOAPFaultParser.java
+ - plugins/org.eclipse.birt.chart.engine_4.8.0.v201806261756/org/eclipse/birt/chart/util/SecurityUtil.java
+ - plugins/org.eclipse.core.runtime_3.14.0.v20180417-0825/org/eclipse/core/internal/runtime/XmlProcessorFactory.java
+ - plugins/org.eclipse.help_3.8.100.v20180512-1136/org/eclipse/help/internal/HelpData.java
+ - plugins/org.eclipse.help_3.8.100.v20180512-1136/org/eclipse/help/internal/UAElement.java
+ - plugins/org.eclipse.help_3.8.100.v20180512-1136/org/eclipse/help/internal/dynamic/DocumentWriter.java
+ - plugins/org.eclipse.help_3.8.100.v20180512-1136/org/eclipse/help/internal/dynamic/DocumentReader.java
+ - plugins/org.eclipse.emf.ecore_2.14.0.v20180529-1144/org/eclipse/emf/ecore/plugin/EcorePlugin.java
+ - plugins/org.eclipse.birt.report.model_4.8.0.v201806261756/org/eclipse/birt/report/model/util/ParserFactory.java
+ - plugins/org.eclipse.birt.report.model_4.8.0.v201806261756/org/eclipse/birt/report/model/metadata/ElementDefn.java
+ - plugins/org.eclipse.birt.report.model_4.8.0.v201806261756/org/eclipse/birt/doc/legacy/RomImage.java
+ - plugins/org.eclipse.birt.core_4.8.0.v201806261756/org/eclipse/birt/core/util/CommonUtil.java
+ - plugins/org.eclipse.birt.core_4.8.0.v201806261756/org/eclipse/birt/core/framework/jar/BundleLoader.java
+ - plugins/org.eclipse.birt.report.engine_4.8.0.v201806261756/org/eclipse/birt/report/engine/parser/PlainTextParser.java
+ - plugins/org.eclipse.birt.report.engine_4.8.0.v201806261756/org/eclipse/birt/report/engine/parser/HTMLTextParser.java
+ - plugins/org.eclipse.birt.report.engine_4.8.0.v201806261756/org/eclipse/birt/report/engine/parser/ReportDesignWriter.java
+ - plugins/org.eclipse.datatools.sqltools.result_1.3.1.201712071719/org/eclipse/datatools/sqltools/result/ResultsViewAPI.java
+ - plugins/org.eclipse.core.resources_3.13.0.v20180512-1138/org/eclipse/core/internal/resources/ProjectDescriptionReader.java
+ - plugins/org.eclipse.core.resources_3.13.0.v20180512-1138/org/eclipse/core/internal/resources/WorkspaceDescriptionReader.java
+
 
 https://download.eclipse.org/birt/downloads/drops/R-R1-4.8.0-201806261756/birt-runtime-4.8.0-20180626.zip :
 
